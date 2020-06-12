@@ -1,0 +1,251 @@
+
+
+
+
+
+
+
+
+.masthead {
+    height: auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  .welcome{
+      width: 100%;
+      height: auto;
+      text-align: center;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+  }
+  .welcome h1{
+      font-style: italic;
+  }
+  .welcome .style1 {
+  
+  border-top: 2px solid rgba(230, 120, 57, 0.623);
+  margin-top: 0px;
+  width: 10rem;
+  
+  }   
+  .welcome p{
+      font-size: 1.2rem;
+      color: gray;
+  }  
+  .why{
+      width: 100%;
+      height: auto;
+      
+      padding-top: 3rem;
+      padding-bottom: 5rem;
+      background-color: rgba(199, 193, 193, 0.185);
+  }
+  .why h1{
+      font-style: italic;
+      text-align: center;
+  }
+  .why .style1 {
+  
+  border-top: 2px solid rgba(230, 120, 57, 0.623);
+  margin-top: 0px;
+  width: 10rem;
+  
+  }   
+  .why p{
+      font-size: 1.4rem;
+      color: rgba(245, 150, 96, 0.623);
+      
+  }
+  .our{
+      width: 100%;
+      height: auto;
+      
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+  }
+  .our h1{
+      font-style: italic;
+      text-align: center;
+  }
+  .our .style1 {
+  
+  border-top: 2px solid rgba(230, 120, 57, 0.623);
+  margin-top: 0px;
+  width: 10rem;
+  
+  }  
+  .our p{
+      text-align: center;
+      font-size: 1.2rem;
+      color: gray;
+  }  
+  .our .card{
+      width: 400px;
+  }
+  .our .card img{
+      width: 40%;
+      margin-left: 5rem;
+      background-color: tomato;
+  }
+  .last {
+   
+   background-color: rgb( 44, 44, 44 );
+   
+   padding-top: 20px;
+  }
+  
+  .last p {
+   
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   color: rgb( 255, 255, 255 );
+   text-transform: uppercase;
+   line-height: 1.4;
+   text-align: center;
+   
+  }
+  .last .fa {
+   background-color: rgb( 44, 44, 44 );
+  color: white;
+  text-align: center;
+  
+  font-size: 15px;
+  border-style:solid;
+  border-color: rgba(230, 120, 57, 0.623);
+  border-width: 1px;
+  padding-top: 4px;
+  margin: 0px 4px 10px 0px;
+  border-radius: 6px;
+  width: 26px;
+  height: 26px;
+  
+  }
+  .last .fa:hover{
+      background-color: tomato;
+  }
+  .last a{
+     
+     margin-right: 8px;
+     
+  }
+  .last .reserved {
+   font-size: 10px;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   color: rgb( 226, 226, 226 );
+   line-height: 1.346;
+   text-align: center;
+  padding-bottom: 20px;
+  }
+  .last .lik{
+     float: none;
+     margin:none;
+     color: rgba(230, 120, 57, 0.623); 
+     text-transform: uppercase;
+     text-decoration: none;
+  
+  }
+  .last .lik:hover{
+     color: rgba(223, 144, 92, 0.336);
+  }
+
+
+
+
+
+  .log{
+    width: 100%;
+    height: auto;
+    
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: rgba(199, 193, 193, 0.219);
+  }
+  .log .card{
+      border: none;
+      padding: 20px 10px 30px 10px;
+  }
+  .log .card input[type=email], input[type=password] {
+      padding: 5px;
+      margin-bottom: 20px;
+      outline: none;
+      border: 1px solid grey;
+      border-radius: 5px;
+  }
+  .log .card button{
+      width: 40%;
+     outline: none;
+     border: 1px solid red;
+     color: white;
+     background-color: rgba(180, 111, 55, 0.479);
+     text-transform: uppercase;
+     padding: 4px;
+     margin-bottom: 10px;
+     border-radius: 5px;
+  }
+  .log .card button:hover{
+      background-color: coral;
+  }
+  .log .card a{
+      color: chocolate;
+      text-decoration: none;
+      width: 100%;
+  }
+  .log .card a:hover{
+      color: gainsboro;
+  }
+
+
+
+  .ad{
+      width: 100%;
+      height: auto;
+      background-color: rgba(187, 184, 184, 0.288);
+      padding: 3rem;
+  }
+  .ad table{
+      background-color: white;
+     
+  }
+  .ad thead{
+      background-color: rgba(8, 8, 8, 0.801);
+      color: white;
+  }
+  .ad h3{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .db{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 3rem;
+  }
+
+.db thead{
+    background-color: rgba(8, 8, 8, 0.801);
+    color: white;
+}
+.db h3{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+.feed{
+    width: 100%;
+    height: auto;
+    background-color: rgba(187, 184, 184, 0.288);
+    padding: 3rem;
+}
+.feed h3{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
