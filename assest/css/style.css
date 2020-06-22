@@ -40,7 +40,7 @@
       padding-bottom: 5rem;
   }
   .welcome h1{
-      font-style: italic;
+      
   }
   .welcome .style1 {
   
@@ -62,7 +62,6 @@
       background-color: rgba(199, 193, 193, 0.185);
   }
   .why h1{
-      font-style: italic;
       text-align: center;
   }
   .why .style1 {
@@ -85,7 +84,6 @@
       padding-bottom: 5rem;
   }
   .our h1{
-      font-style: italic;
       text-align: center;
   }
   .our .style1 {
