@@ -11,270 +11,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-      <style>
-        .head{
-          width: 100%;
-          height: auto;
-          background-color: #1f4a60;
-          padding: 1rem;
-        }        
-        .head .nav-link{
-          color: white;
-          
-        }
-        .head .nav-item{
-          margin-left: 2rem;
-        }
-
-        .head .nav-item button{
-          border: 2px solid #f8981d;
-          outline: none;
-          background-color: #f8981d;
-        
-          padding-left: 2rem;
-          padding-right: 2rem;
-          padding-top: .5rem;
-          padding-bottom: .5rem;
-          color: white;
-          transition: 0.5s;
-        }
-        .head .nav-item button:hover{
-          border: 2px solid #f8981d;
-          
-          background-color: transparent;
-         
-          
-          color: white;
-        }
-
-
-        .foot{
-          width: 100%;
-          height: auto;
-          background-color: #1f4a60;
-          color: white;
-          padding-top: 2rem;
-          padding-bottom: 2rem;
-          
-        }
-        .foot h5{
-          padding-left: 3px ;
-          text-transform: uppercase;
-        }
-        .foot a{
-          color: white;
-          font-size: 18px;
-          text-decoration: none;
-        }
-        .foot a:hover{
-          color: #f8981d;
-          
-        }
-
-        .foot .style1 {
-
-border-top: 1px solid #f8981d;
-margin-top: 1px;
-width: 50%;
-margin-left: 0px;
-}
-
-.last{
-  width: 100%;
-  height: auto;
-  background-color: #0D0E0E;
-  padding: .6rem;
-}
-.last a{
-  font-size: 1rem;
-  color: white;
-  text-decoration: none;
-}
-
-.top-main{
-    width: 100%;
-    height: auto;
-    background-color: #1f4a60;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-.top-main h1{
-    text-align: center;
-    color: white;
-}
-.top-main img{
-    width: 30%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-.top-main .card{
-    width: 100%;
-    height: auto;
-    border: none;
-}
-.top-main .card .button1{
-    width: 100%;
-    height: auto;
-    border: 2px solid #f8981d;
-    outline: none;
-    color: white;
-    background-color: #f8981d;
-    font-size: 1.2rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    transition: 0.5s;
-}
-.top-main .card .button1:hover{
-    background-color: #1f4a60;
-}
-.top-main .card .button2{
-    width: 100%;
-    height: auto;
-    border: 2px solid #f8981d;
-    outline: none;
-    color: white;
-    background-color: #1f4a60;
-    font-size: 1.2rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    transition: 0.5s;
-}
-.top-main .card .button2:hover{
-    background-color: #f8981d;
-}
-.how{
-    width: 100%;
-    height: auto;
-   
-}
-.how .how_left{
-    width: 100%;
-    height: auto;
-    background-color: #f1f2f2;
-}
-.how .how_left h3{
-    color: #333333;
-    font-weight: 400;
-    margin-top: 3rem;
-}
-.how .how_left p{
-    color: #333333;
-   font-size: 1.1rem;
-   text-align: justify;
-    
-}
-.how .how_left button{
-    border: 2px solid #1f4a60;
-    outline: none;
-    width: 8rem;
-    color: #1f4a60;
-    margin-bottom: 3rem;
-    margin-top: 1.5rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    transition: 0.5s;
-}
-.how .how_left button:hover{
-    border: 2px solid #f8981d;
-    background-color: #f8981d;
-}
-.how .how_right{
-    width: 100%;
-    height: auto;
-    background-color: #1f4a60;
-    opacity: .99;
-}
-.how .how_right img{
-    width: 80%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    opacity: 1;
-}
-.login .vl {
-  border-left: 1px solid grey;
-  height: 2rem;  
-}
-.login{
-  width: 100%; 
-}
-.login h6{
-  text-align: center;
-  color: grey;
-  margin-left: -2px;
-}
-.login .card{
-  width: 100%;
-  height: auto;
-  border: none;
-
-}
-.login .card button{
-  width: 100%;
-  height: auto;
-  outline: none;
-  border: none;
-  color: white;
-  font-weight: lighter;
-  border-radius: 3px;
-  padding-bottom: .5rem;
-  padding-top: .3rem;
-}
-.login .modal-header{
-  background-color: #1f4a60;
-}
-.login .modal-header button{
-  color: white;
-  outline: none;
-  border: none;
-}
-.login .modal-header h4{
-  color: white;
-  text-align: center;
-  font-weight: lighter;
-}
-.login input[type=email], input[type=password]{
-  width: 100%;
-  height: auto;
-  outline: none;
-  border: 1px solid grey;
-  margin-top: 1rem;
-  background-color: rgba(187, 182, 182, 0.123);
-  padding-left: 1rem;
-  padding-top: .3rem;
-  padding-bottom: .3rem;
-  border-radius: 4px;
-  font-size: .8rem;
-}
-.login .modal-body .button1{
-  width: 100%;
-  height: auto;
-  text-align: center;
-  margin-top: 1rem;
-  padding-top: .3rem;
-  padding-bottom: .3rem;
-  border-radius: 4px;
-  outline: none;
-  border: 2px solid #1f4a60;
-  color: white;
-  background-color: #1f4a60;
-  text-transform: uppercase;
-  font-size: .9rem;
-  transition: 0.5s;
-}
-.login .modal-body .button1:hover{
-  
-    background-color: transparent;
-    color: #1f4a60;
-}
-.login .modal-footer{
-  width: 100%;
-  background-color:  rgba(187, 182, 182, 0.486);
-}
-.login .modal-footer a{
-  text-decoration: none;
-  color: #333333;
-}
- </style>  
+      <link rel="stylesheet" href="assets/css/style_user.css">
     </head>
     <body>
 
@@ -285,7 +22,7 @@ margin-left: 0px;
                 <nav class="navbar navbar-expand-lg">
                   <div class="logo">
                     <a class="custom-logo-link " rel="home" href="#">
-                      <img width="133" height="55" src="#" alt="Eniacoder" class="custom-logo" >
+                      <img width="133" height="55" src="assets/img/user/headlogo.svg" alt="Eniacoder" class="custom-logo" >
                     </a>
                   </div>
                   <button class="navbar-toggler nav-dark bbb" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -305,7 +42,7 @@ margin-left: 0px;
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link " href="#" id="navbardrop" data-toggle="dropdown">
-                          Dropdown link
+                          Dropdown link<img src="assets/img/user/servicearrow.svg" width="15px" style="margin-left: 4px;">
                         </a>
                         <div class="dropdown-menu">
                           <a class="dropdown-item" href="#">Link 1</a>
@@ -320,10 +57,16 @@ margin-left: 0px;
                           Contact Us
                         </a>
                       </li>
-                      <li   class="  nav-item">
-                        <a title="Login/Registration" href="#" class="nav-link" data-toggle="modal" data-target="#loginmodal">
-                          Login/Registration
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" id="navbardrop" data-toggle="dropdown">
+                          My Account<img src="assets/img/user/servicearrow.svg" width="15px" style="margin-left: 4px;">
                         </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginmodal">Login</a>
+                          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#signupmodal">Sign Up</a>
+                          
+                        </div>
                       </li>
                       <li   class="  nav-item">
                         <button  >Let's Start</button>
@@ -522,8 +265,11 @@ margin-left: 0px;
             <div class="row">
            
               <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                
-              </div>
+                <center><img width="133" height="55" src="assets/img/user/headlogo.svg" alt="Eniacoder" class="custom-logo" ></center>
+                <input type="email" name="email" placeholder="enter email">
+                <button>submit</button>
+            
+            </div>
               <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                 <h5>products</h5>
                 <hr class="style1">
