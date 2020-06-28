@@ -3,7 +3,7 @@
 //  Site Settings 
 $config['css'] = base_url().'assets/css/';
 $config['js'] = base_url().'assets/js/';
-$config['image'] = base_url().'assets/img/';
+$config['image'] = base_url().'assets/img/user/';
 
 
 
