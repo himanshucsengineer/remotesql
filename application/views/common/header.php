@@ -1,4 +1,16 @@
-
+<?php
+  if(isset($_SESSION["name"]))
+  {
+    $tag=$_SESSION["name"];  
+    $options = ' <a class="dropdown-item" href="#" ">Dashboard</a>
+                <a class="dropdown-item" href="'. base_url().'indexController/logout" ">Logout</a>';
+  }
+  else{
+    $tag="My Account";
+    $options = ' <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginmodal">Login</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#signupmodal">Sign Up</a>';
+  }
+?>
         <header class="head">
           <div class="container">
             <div class="row">
@@ -44,12 +56,10 @@
                       
                       <li class="nav-item dropdown">
                         <a class="nav-link " href="#" id="navbardrop" data-toggle="dropdown">
-                          My Account<img src="assets/img/user/servicearrow.svg" width="15px" style="margin-left: 4px;">
+                          <?php echo $tag;?><img src="assets/img/user/servicearrow.svg" width="15px" style="margin-left: 4px;">
                         </a>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginmodal">Login</a>
-                          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#signupmodal">Sign Up</a>
-                          
+                          <?php echo $options; ?>
                         </div>
                       </li>
                       <li   class="  nav-item">

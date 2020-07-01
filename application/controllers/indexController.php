@@ -13,6 +13,110 @@ class IndexController extends CI_Controller {
         $data['url'] = $this->config->item('urls');
         $this->load->view('index',$data);
     }
+    public function signup()
+    {
+        $this->load->model('userModel');
+        $this->input->post('formSubmit');
+        $this->form_validation->set_rules('email', '', 'is_unique[userdata.username]|required');
+        $this->form_validation->set_rules('password', '', 'required');
+        $this->form_validation->set_rules('name', '', 'required');
+        $this->form_validation->set_rules('cpassword', '', 'required');
+        if( $this->input->post('password')!= $this->input->post('cpassword'))
+        {
+            $this->session->set_flashdata('error','Password not matching'); 
+            redirect(base_url()); 
+            
+        }
+        else if(strlen($this->input->post('password'))<6 ){
+            $this->session->set_flashdata('error','Password lenght is smaller the 6 character'); 
+            redirect(base_url()); 
+        }
+        else if ($this->form_validation->run()){ 
+        $data = array(
+            'name'    => $this->input->post('name'),
+            'username' => $this->input->post('email'),
+            'password' => $this->input->post('password'),
+            'dbcount'=>0
+        );
+        if($this->userModel->signup($data)){
+            $this->session->set_flashdata('success','Successfully Registred, Please Login to access you account'); 
+            redirect(base_url()); 
+        }
+        else{
+            $this->session->set_flashdata('error','Error In Submission'); 
+            redirect(base_url()); 
+            
+        }
+         
+
+    }
+    else{
+        $this->session->set_flashdata('error','User already registred'); 
+        redirect(base_url()); 
+        
+    }
+}
+
+    public function newsfeed()
+    {
+        $this->load->model('userModel');
+        $this->input->post('formSubmit');
+        $this->form_validation->set_rules('email', '', 'required');
+        if ($this->form_validation->run()){ 
+            $data = array(
+                'email' => $this->input->post('email'),
+            );
+
+            if($this->userModel->newsfeed($data)){
+                    $this->session->set_flashdata('success','Thank you for subscription'); 
+                    redirect(base_url()); 
+            }
+            else{
+                $this->session->set_flashdata('error','Error In Submission'); 
+                redirect(base_url()); 
+            }
+        }
+        else{
+            $this->session->set_flashdata('error','Please Fill all Fields'); 
+            redirect(base_url()); 
+        }
+    }
+
+    public function login()
+    {
+        $this->load->model('userModel');
+        $model_data=$this->userModel->fetchModeldata();
+        $login_success=0;
+        $user_data = array(
+            'email' => $this->input->post('email'),
+            'password' => $this->input->post('password'),
+        );
+        foreach ($model_data as $key => $value) {
+            if($value['username']==$user_data['email'] && $value['password']==$user_data['password'])
+            {
+                $_SESSION["name"]=$value["name"];
+                $_SESSION["email"]=$value["username"];
+                $_SESSION["dbcount"]=$value["dbcount"];
+                $login_success=1;
+                break;
+            }
+        }
+        if($login_success==1){
+            // $this->session->set_flashdata('success','Logged In Successfully'); 
+            redirect(base_url()); 
+        }
+        else{
+            $this->session->set_flashdata('error','Wrong Username Or Password'); 
+            redirect(base_url()); 
+        }
+    }
+    public function logout(){
+            session_destroy();
+            unset($_SESSION["name"]);
+            unset($_SESSION["email"]);
+            unset($_SESSION["dbcount"]);
+            redirect(base_url()); 
+    }
 }
 
 /* End of file Login.php */

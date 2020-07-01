@@ -185,7 +185,7 @@
     text-align: center;
     font-weight: lighter;
   }
-  .login input[type=email], input[type=password]{
+  .login input[type=email], input[type=password],input[type=text]{
     width: 100%;
     height: auto;
     outline: none;
