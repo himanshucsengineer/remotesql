@@ -54,6 +54,7 @@ $route['blog'] = 'blogController';
 $route['blogpost'] = 'BlogPostController';
 $route['about'] = 'AboutController';
 $route['contact'] = 'ContactController';
+$route['dashboard'] = 'DashboardController';
 $route['admin'] = 'login';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

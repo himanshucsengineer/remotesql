@@ -2,7 +2,7 @@
   if(isset($_SESSION["name"]))
   {
     $tag=$_SESSION["name"];  
-    $options = ' <a class="dropdown-item" href="#" ">Dashboard</a>
+    $options = ' <a class="dropdown-item" href="'. base_url().'dashboard" ">Dashboard</a>
                 <a class="dropdown-item" href="'. base_url().'indexController/logout" ">Logout</a>';
   }
   else{
