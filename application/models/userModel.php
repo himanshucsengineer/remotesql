@@ -12,9 +12,6 @@ class userModel extends CI_Model {
     }
 
     function signup($data){
-        $username=$data['username'];
-        $password=$data['password'];
-        $this->db->query("CREATE USER '$username'@'%' IDENTIFIED BY '$password'");
         return $this->db->insert('userdata',$data);
     }
     function newsfeed($data){

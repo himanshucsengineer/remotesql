@@ -10,7 +10,7 @@ class BlogController extends CI_Controller {
     public function index()
     {
         $this->config->load('urls',true);
-        $data['url'] = $this->config->item('urls');
+        $data['url'] = array($this->config->item('urls'),"hello");
         $this->load->view('blog',$data);
     }
 }

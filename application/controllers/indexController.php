@@ -10,7 +10,7 @@ class IndexController extends CI_Controller {
     public function index()
     {
         $this->config->load('urls',true);
-        $data['url'] = $this->config->item('urls');
+        $data['url'] = array($this->config->item('urls'),"hello");
         $this->load->view('index',$data);
     }
     public function signup()
@@ -25,7 +25,10 @@ class IndexController extends CI_Controller {
         {
             $this->session->set_flashdata('error','Password not matching'); 
             redirect(base_url()); 
-            
+        }
+        else if ( preg_match('/\s/',$this->input->post('name')) || preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $this->input->post('name')) ){
+            $this->session->set_flashdata('error','Do not use space or special character in name'); 
+            redirect(base_url());
         }
         else if(strlen($this->input->post('password'))<6 ){
             $this->session->set_flashdata('error','Password lenght is smaller the 6 character'); 
@@ -36,7 +39,8 @@ class IndexController extends CI_Controller {
             'name'    => $this->input->post('name'),
             'username' => $this->input->post('email'),
             'password' => $this->input->post('password'),
-            'dbcount'=>0
+            'dbcount'=>0,
+            'usercount'=>0
         );
         if($this->userModel->signup($data)){
             $this->session->set_flashdata('success','Successfully Registred, Please Login to access you account'); 
@@ -94,9 +98,11 @@ class IndexController extends CI_Controller {
         foreach ($model_data as $key => $value) {
             if($value['username']==$user_data['email'] && $value['password']==$user_data['password'])
             {
+                $_SESSION["id"]=$value["id"];
                 $_SESSION["name"]=$value["name"];
                 $_SESSION["email"]=$value["username"];
                 $_SESSION["dbcount"]=$value["dbcount"];
+                $_SESSION["usercount"]=$value["usercount"];
                 $login_success=1;
                 break;
             }

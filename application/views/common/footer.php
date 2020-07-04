@@ -152,8 +152,8 @@ $message="";
           <div class="row justify-content-center">
             <div class="col-md-8">
           <form action="<?php echo base_url();?>indexController/login" method="POST">
-            <input type="email" id="#" name="email" placeholder="Email">
-            <input type="password" id="#" name="password" placeholder="Password">
+            <input type="email" id="#" name="email" placeholder="Email" required>
+            <input type="password" id="#" name="password" placeholder="Password" required>
             <button type="submit" class="button1">Login</button>
           </form>
           </div>

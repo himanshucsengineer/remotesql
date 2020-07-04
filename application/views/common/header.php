@@ -18,7 +18,7 @@
                 <nav class="navbar navbar-expand-lg">
                   <div class="logo">
                     <a class="custom-logo-link " rel="home" href="#">
-                      <img width="133" height="55" src="<?php echo $url['image'];?>/headlogo.svg" alt="Eniacoder" class="custom-logo" >
+                      <img width="133" height="55" src="<?php echo $url[0]['image'];?>/headlogo.svg" alt="Eniacoder" class="custom-logo" >
                     </a>
                   </div>
                   <button class="navbar-toggler nav-dark bbb" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
