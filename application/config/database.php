@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '@Parag1',
+	'hostname' => '20.52.42.194',
+	'username' => 'parag',
+	'password' => 'HelloIndia@123',
 	'database' => 'remotesql',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
