@@ -63,7 +63,7 @@
                         </div>
                       </li>
                       <li   class="  nav-item">
-                        <button  >Let's Start</button>
+                       <a href="http://20.52.42.194/phpmyadmin/"> <button  >PhpMyadmin</button></a>
                         
                       </li>
                     </ul>

@@ -136,7 +136,7 @@
                 <div class="phpmy">
                 <div class="container">
                     <h3>Php My admin for database administration</h3> <br>
-                    <a href="http://localhost/phpmyadmin" ><button><i class="fa fa-unlock-alt" aria-hidden="true"></i> goto my phpMyAdmin</button></a>
+                    <a href="http://20.52.42.194/phpmyadmin/" ><button><i class="fa fa-unlock-alt" aria-hidden="true"></i> goto my phpMyAdmin</button></a>
                 </div>
             </div>
             <?php include("common/footer.php"); ?>
